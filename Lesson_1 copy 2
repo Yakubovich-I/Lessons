@@ -1,0 +1,47 @@
+#Task1
+
+x=int(58776592376)
+a=0
+while x>0:
+    n=0
+    while x%10 != 0:
+        x=x-1
+        n += 1
+    x=int(x/10)
+    if a<n:
+        a=n
+print("The largest digit is ",a)
+
+
+#Task 2 - norm
+
+z=3
+y=4
+print("z=",z,"y=",y)
+y=int(str(z)+str(y))
+z=0
+while y%10 != 0:
+    y=y-1
+    z +=1
+y=int(y/10)
+print("z=",z,"y=",y)
+
+
+#Task 3 - norm
+print("Task 3 - norm")
+
+import math
+a=3
+b=2
+c=-5
+D=b**2-4*a*c
+if D>0:
+    x1=(-b-math.sqrt(D))/(2*a)
+    x2=(-b+math.sqrt(D))/(2*a)
+    print("x1=",x1,"x2=",x2,"Discriminant=",D)
+elif D==0:
+    x1 = (-b) / (2 * a)
+    x2 = (-b) / (2 * a)
+    print("x1=",x1,"x2=",x2,"Discriminant=",D)
+else:
+    print("imposible to solve")
